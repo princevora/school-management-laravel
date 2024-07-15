@@ -1,0 +1,33 @@
+:root {
+    --loading-grey: #ededed;
+  }
+
+  .loading .content {
+    height: 20px;
+    border-radius: 6px;
+    background-color: var(--loading-grey);
+    background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, .5) 50%,
+      rgba(255, 255, 255, 0) 60%
+    ) var(--loading-grey);
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    animation: loading 1s ease-in-out infinite;
+  }
+  
+  @keyframes loading {
+    to {
+      background-position-x: -20%;
+    }
+  }
+
+  .btn-circle{
+    width: 50px;
+    height: 50px;
+    /* padding: 13px 18px; */
+    border-radius: 60px;
+    font-size: 25px;
+    text-align: center;
+  }
